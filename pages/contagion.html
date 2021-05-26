@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../assets/images/COVID-19.ico" type="image/x-icon">
+    <title>Поширення</title>
+    <link href="../styles/contagion.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<nav>
+    <section>
+        <a href="index.html">
+            <img src="../assets/images/logo.png" alt="logo" id="logo">
+        </a>
+    </section>
+    <ul class="nav-list">
+        <li><a href="index.html">Головна сторінка</a></li>
+        <li><a href="contagion.html" class="activePage">Поширення</a></li>
+        <li><a href="symptoms.html">Симптоми</a></li>
+        <li><a href="prevention.html">Профілактика</a></li>
+        <li>
+            <button id="vaccination-btn">Вакцинація</button>
+        </li>
+    </ul>
+</nav>
+<div class="main">
+    <div class="text">
+        <span class="covid19">COVID-19</span> - це найнебезпечнійший вірус на даний момент.
+        <br>Існує безліч моїх модифікацій і від нього ніде не сховаєшся.
+        <h2>Існують такі шляхи поширення, як:</h2>
+
+    </div>
+    <div class="cards">
+        <div class="first">
+            <div class="backgroundForImg">
+                <img src=../assets/images/firstCard.png id="firstImg">
+                <h2>Повітря</h2>
+                <h3 id="description1">
+                    <br>Вірус поширюється повітряно-крапельним шляхом.
+                    Це вказує на те, що кожен із нас у небезпеці.
+                    Тому потрібно дотримуватись соціальної дистанції,
+                    цим самим збережуючи як і себе, так й інших.
+                </h3>
+            </div>
+
+        </div>
+        <div class="second">
+            <div class="backgroundForImg">
+                <img src=../assets/images/secondCard.png id="secondImg">
+                <h2>Контакт з людьми</h2>
+                <h3 id="description2">
+                    <br><br>Тісний контакт із іншими людьми легко може привести до зараження вірусом.
+                    Тому старайтесь уникайте близького контакту із іншими ближче, ніж на 2 метри,
+                    та мийте руки. Гігієна понад усе!
+                </h3>
+            </div>
+        </div>
+        <div class="third">
+            <div class="backgroundForImg">
+                <img src=../assets/images/thirdCard.png id="thirdImg">
+                <h2>Предмети</h2>
+                <h3 id="description3">
+                    <br>Доведено, що вірус передається через заражені речі.
+                    Тобто, взявши в руки щось, чим користувався хворий,
+                    великий шанс заразитись самому.
+                    Тому, будьте обережні із речами інших людей.
+                </h3>
+            </div>
+        </div>
+    </div>
+    <img src="../assets/images/coronaRed.png" id="coronaRed">
+    <img src="../assets/images/coronaGreen.png" id="coronaGreen">
+
+</div>
+<script>
+    document.getElementById("vaccination-btn").onclick = function () {
+        window.open("https://diia.gov.ua/services/zapis-do-lista-ochikuvannya-vakcinaciyi-vid-covid-19", "_blank");
+    }
+</script>
+</body>
+</html>

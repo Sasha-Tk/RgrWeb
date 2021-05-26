@@ -1,0 +1,93 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.load * {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -o-transition: none !important;
+}
+
+li > a {
+    text-decoration: none;
+    color: #035755;
+    height: 20px;
+    position: relative;
+
+}
+
+li > a:after {
+    display: block;
+    content: '';
+    border: 2px solid transparent;
+    border-radius: 50%;
+    position: absolute;
+    right: 50%;
+    height: 6px;
+    width: 6px;
+    left: 50%;
+    top: 30px;
+    transform: translateX(-50%);
+    background-color: transparent;
+    transition: 0.3s
+}
+
+.nav-list > li > a:hover:after, .activePage:after {
+    background-color: #F24B4B;
+}
+
+li > a:hover, .activePage {
+    color: #FB4F4A;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50vw;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    left: 40%;
+    top: 3%;
+}
+
+#vaccination-btn {
+    width: 150px;
+    height: 60px;
+    background-color: #FB4F4A;
+    border-left: 3px solid #FB4F4A;
+    border-right: 3px solid #FB4F4A;
+    border-top: 3px solid #FB4F4A;
+    border-bottom: 3px solid #FB4F4A;
+    border-radius: 60px;
+    font-size: 20px;
+    margin-left: 100px;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+#vaccination-btn:hover {
+    background-color: white;
+    color: #FB4F4A;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+    transform: translateY(2px);
+}
+#vaccination-btn:active{
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+#logo {
+    width: 10%;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+

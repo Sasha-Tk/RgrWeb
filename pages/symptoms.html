@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../assets/images/COVID-19.ico" type="image/x-icon">
+    <title>Симптоми</title>
+    <link href="../styles/symptoms.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap" rel="stylesheet">
+</head>
+<body>
+<nav>
+    <section>
+        <a href="index.html">
+            <img src="../assets/images/logo.png" alt="logo" id="logo">
+        </a>
+    </section>
+    <ul class="nav-list">
+        <li><a href="index.html">Головна сторінка</a></li>
+        <li><a href="contagion.html">Поширення</a></li>
+        <li><a href="symptoms.html" class="activePage">Симптоми</a></li>
+        <li><a href="prevention.html">Профілактика</a></li>
+        <li>
+            <button id="vaccination-btn">Вакцинація</button>
+        </li>
+    </ul>
+</nav>
+<div class="text">
+    <span class="covid19">COVID-19</span> можна сплутати з іншими вірусними інфекціями, <br>
+    тому потрібно знати його симптоми, щоб вчасно звернутися до лікаря.
+</div>
+
+<div>
+    <img id="sickGirl" src="../assets/images/sick-girl.png">
+    <img id="coronaRed" src="../assets/images/coronaRed.png">
+    <img id="coronaGreen" src="../assets/images/coronaGreen.png">
+    <img id="coronaPink" src="../assets/images/coronaPink.png">
+    <img id="coronaLightGreen" src="../assets/images/coronaGreen.png">
+</div>
+<div>
+    <p id="symptom1"><b>Лихоманка</b></p>
+    <p id="symptom2"><b>Кашель</b></p>
+    <p id="symptom3"><b>Задишка</b></p>
+    <p id="symptom4"><b>Головний біль</b></p>
+    <p id="symptom5"><b>Нежить</b></p>
+    <p id="symptom6"><b>Озноб</b></p>
+</div>
+<div class="leftCardsGroup">
+    <div id="card1">
+        <h3>
+            Лихоманка спостерігається на початку захворювання.
+            Температура стає вище 37°С і може сягати 40°С. Крім того, з'являється відчуття втоми
+            зі збільшенням слізовиділення та потовиділення.
+        </h3>
+    </div>
+    <div id="card2">
+        <h3>
+            При коронавірусній хворобі спостерігається сухий кашель — при застуді він мокрий.
+            Також може виникати біль у горлі та почервоніння.
+        </h3>
+    </div>
+    <div id="card3">
+         <h3>
+            Задишка та інші проблеми з диханням — сигнал про початок ускладнень і появу пневмонії.
+            Вона є небезпечною, адже у складних випадках людина не може дихати самостійно.
+         </h3>
+    </div>
+</div>
+<div class="rightCardsGroup">
+    <div id="card4">
+        <h3>
+            Хворобливі відчуття в голові виникають при підвищення температури.
+            Окрім цього, головний біль може виникати при недостачі кисню.
+        </h3>
+    </div>
+    <div id="card5">
+        <h3>
+            Нежить супроводжується закладеністю носа та надмірним виділенням носового слизу.
+            Також спостерігається втрата нюху та смаку.
+        </h3>
+    </div>
+    <div id="card6">
+        <h3>
+            Якщо є відчуття холоду, приступи тремтіння, моментні прояви "гусиної шкіри"
+            чи побіління шкіри - це ознаки ознобу.
+            Він виникає внаслідок підняття температури та протікання інфекційної хвороби.
+        </h3>
+    </div>
+</div>
+<script>
+    document.getElementById("symptom1").onmouseover = function () {
+        document.getElementById("card1").style.opacity = "100%";
+    }
+    document.getElementById("symptom1").onmouseleave = function () {
+        document.getElementById("card1").style.opacity = "0";
+    }
+    document.getElementById("symptom2").onmouseover = function () {
+        document.getElementById("card2").style.opacity = "100%";
+    }
+    document.getElementById("symptom2").onmouseleave = function () {
+        document.getElementById("card2").style.opacity = "0";
+    }
+    document.getElementById("symptom3").onmouseover = function () {
+        document.getElementById("card3").style.opacity = "100%";
+    }
+    document.getElementById("symptom3").onmouseleave = function () {
+        document.getElementById("card3").style.opacity = "0";
+    }
+    document.getElementById("symptom4").onmouseover = function () {
+        document.getElementById("card4").style.opacity = "100%";
+    }
+    document.getElementById("symptom4").onmouseleave = function () {
+        document.getElementById("card4").style.opacity = "0";
+    }
+    document.getElementById("symptom5").onmouseover = function () {
+        document.getElementById("card5").style.opacity = "100%";
+    }
+    document.getElementById("symptom5").onmouseleave = function () {
+        document.getElementById("card5").style.opacity = "0";
+    }
+    document.getElementById("symptom6").onmouseover = function () {
+        document.getElementById("card6").style.opacity = "100%";
+    }
+    document.getElementById("symptom6").onmouseleave = function () {
+        document.getElementById("card6").style.opacity = "0";
+    }
+
+    document.getElementById("vaccination-btn").onclick = function (){
+        window.open("https://diia.gov.ua/services/zapis-do-lista-ochikuvannya-vakcinaciyi-vid-covid-19","_blank");
+    }
+</script>
+</body>
+</html>

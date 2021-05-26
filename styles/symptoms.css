@@ -1,0 +1,160 @@
+@import "partials/nav.css";
+
+.text {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #035755;
+    text-align: center;
+    font-weight: bolder;
+    top: 18%;
+    font-size: 25px;
+}
+
+.covid19 {
+    color: #FF383D;
+}
+
+#sickGirl {
+    position: absolute;
+    top: 28%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50vw;
+}
+
+#symptom1, #symptom2, #symptom3,
+#symptom4, #symptom5, #symptom6 {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    line-height: 100px;
+    background-color: #FFE1E2;
+    border: 10px solid #FFE1E2;
+    border-radius: 50%;
+    text-align: center;
+    transition: 1s;
+    font-size: 16px;
+    color: #FF383D;
+}
+
+#symptom1:hover, #symptom2:hover, #symptom3:hover,
+#symptom4:hover, #symptom5:hover, #symptom6:hover {
+    background-color: #DBEEE6;
+    border-color: #DBEEE6;
+    color: #56977B;
+}
+
+#symptom1 {
+    top: 35.5%;
+    left: 25.8%;
+}
+
+#symptom2 {
+    top: 56.2%;
+    left: 26.2%;
+}
+
+#symptom3 {
+    top: 77%;
+    left: 25.8%;
+}
+
+#symptom4 {
+    top: 33%;
+    left: 68.41%;
+    line-height: 30px;
+    padding-top: 25px;
+    height: 75px;
+}
+
+#symptom5 {
+    top: 53.9%;
+    left: 67.8%;
+}
+
+#symptom6 {
+    top: 74.5%;
+    left: 68.4%;
+}
+
+.leftCardsGroup, .rightCardsGroup {
+    position: absolute;
+    height: 56%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    transform: translateX(-50%);
+}
+
+.leftCardsGroup {
+    top: 35%;
+    left: 13%;
+}
+
+.rightCardsGroup {
+    top: 32%;
+    left: 87%;
+}
+
+#card1, #card2, #card3,
+#card4, #card5, #card6 {
+    width: 370px;
+    height: 150px;
+    border-bottom: 10px solid white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    background-color: white;
+    font-size: 15px;
+    text-align: center;
+    color: #035755;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 10%;
+    z-index: 1000;
+    transition: 1s;
+    opacity: 0;
+}
+
+#card2, #card5 {
+    height: 140px;
+    padding-top: 10px;
+}
+
+#card3, #card4 {
+    height: 137px;
+    padding-top: 13px;
+}
+
+#coronaRed {
+    position: absolute;
+    left: 5%;
+    top: 25%;
+    width: 10%;
+    transform: rotate(25deg);
+}
+
+#coronaPink {
+    position: absolute;
+    left: 2%;
+    top: 45%;
+    width: 6%;
+    transform: rotate(-75deg);
+}
+
+#coronaGreen {
+    position: absolute;
+    left: 92%;
+    top: 55%;
+    width: 6%;
+    transform: rotate(90deg);
+}
+
+#coronaLightGreen {
+    position: absolute;
+    left: 84%;
+    top: 68%;
+    width: 14%;
+    transform: rotate(100deg);
+    opacity: 30%;
+}

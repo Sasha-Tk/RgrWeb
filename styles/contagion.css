@@ -1,0 +1,138 @@
+@import "partials/nav.css";
+
+.first, .second, .third {
+    width: 330px;
+    height: 450px;
+    border-bottom: 10px solid white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    background-color: white;
+    z-index: 1000;
+    transition: 0.5s;
+}
+
+#description1, #description2, #description3 {
+
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 19px;
+    transition-delay: 0.1s;
+    margin: 0;
+    position: absolute;
+    width: 310px;
+    z-index: -1;
+    top: 240px;
+    opacity: 0;
+    height: 0;
+}
+
+
+.first:hover, .second:hover, .third:hover {
+    border-bottom: 10px solid #FB4F4A;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    background-color: white;
+}
+
+.first:hover #firstImg {
+    width: 160px;
+}
+
+.second:hover #secondImg {
+    width: 160px;
+}
+
+.third:hover #thirdImg {
+    width: 160px;
+}
+
+.first:hover #description1 {
+    opacity: 1;
+    color: #035755;
+}
+
+.first:hover h2, .second:hover h2, .third:hover h2 {
+    color: #FB4F4A;
+}
+
+h2 {
+    transition: 0.7s;
+}
+
+.second:hover #description2 {
+
+    opacity: 1;
+    color: #035755;
+}
+
+.second:hover #description2 {
+    color: #035755;
+}
+
+.third:hover #description3 {
+    opacity: 1;
+    color: #035755;
+}
+
+.backgroundForImg {
+    background-color: white;
+    z-index: 1000;
+    border-radius: 10px;
+}
+
+.cards {
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#firstImg, #secondImg, #thirdImg {
+    width: 330px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+h2 {
+    color: #035755;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 32px;
+}
+
+#coronaRed {
+    position: absolute;
+    z-index: -1000;
+    top: 650px;
+    left: 170px;
+}
+
+#coronaGreen {
+    position: absolute;
+    z-index: -1000;
+    top: 300px;
+    left: 1500px;
+    transform: rotateZ(45deg);
+}
+
+.covid19 {
+    color: #FB4F4A;
+}
+
+.text {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 25px;
+    color: #035755;
+    font-weight: bolder;
+}

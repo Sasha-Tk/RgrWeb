@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="../assets/images/COVID-19.ico" type="image/x-icon">
+    <title>Профілактика</title>
+    <link rel="stylesheet" href="../styles/prevention.css">
+</head>
+<body>
+<nav>
+    <section>
+        <a href="index.html">
+            <img src="../assets/images/logo.png" alt="logo" id="logo">
+        </a>
+    </section>
+    <ul class="nav-list">
+        <li><a href="index.html">Головна сторінка</a></li>
+        <li><a href="contagion.html">Поширення</a></li>
+        <li><a href="symptoms.html">Симптоми</a></li>
+        <li><a href="prevention.html" class="activePage">Профілактика</a></li>
+        <li>
+            <button id="vaccination-btn">Вакцинація</button>
+        </li>
+    </ul>
+</nav>
+<section class="header">
+    <h2>Що слід робити, щоб захиститись від <span class="covid19">COVID-19</span>?</h2>
+
+</section>
+<div class="backgroundImg">
+    <img id="coronaGreen1" src="../assets/images/coronaGreen.png" >
+    <img id="coronaRed1" src="../assets/images/coronaRed.png" >
+    <img id="coronaGreen2" src="../assets/images/coronaGreen.png" >
+    <img id="coronaRed2" src="../assets/images/coronaRed.png" >
+</div>
+<main class="main">
+
+    <section class="prevention-section">
+        <div class="section-title">
+            <div class="title-header">
+                <span class="number">1</span>
+                <h4>Носіть маску</h4>
+            </div>
+            <p>Носіть маску, як мінімум, коли навколо є колеги або велике скупчення людей.
+                Маска, хоч і не повністю, але вбереже від зараження, проте це захистить не лише вас, але й людей
+                навколо.
+                <br>Думайте не тільки про себе!</p>
+        </div>
+        <div class="section-img-right">
+            <img src="../assets/images/wear-mask.png" alt="wear mask image">
+
+        </div>
+
+    </section>
+    <section class="prevention-section">
+        <div class="section-img-left">
+            <img src="../assets/images/wash-hands-girl.png" alt="wash hands image">
+        </div>
+        <div class="section-title">
+            <div class="title-header">
+                <span class="number">2</span>
+                <h4>Мийте руки</h4>
+            </div>
+            <p>Часто мийте руки з милом не менше 20 секунд.
+                Коли мило та вода є недоступними, то використовуйте дезинфікуючі засоби
+                на основі спирту з 60% вмістом етанолу або 70% вмістом ізопропанолу.
+                Використовуючи такі антисептичні засоби, розтирайте руки до тих, поки вони повністю
+                не висохнуть.
+                <br>Завжди мийте руки, навіть якщо вони візуально чисті!</p>
+        </div>
+    </section>
+    <section class="prevention-section">
+        <div class="section-title">
+            <div class="title-header">
+                <span class="number">3</span>
+                <h4>Використовуйте хустинки та серветки</h4>
+            </div>
+            <p>Практикуйте хороший респіраторний етикет. Використовуйте хустинки та
+                серветки під час чхання та прикривайте рот ліктем під час кашлю.
+                Це допоможе запобігти розповсюдженню бактерій та частково
+                захистить інших людей від вірусу.
+            </p>
+        </div>
+        <div class="section-img-right">
+            <img src="../assets/images/use-nose-rag.png" alt="use nose rag image">
+        </div>
+    </section>
+    <section class="prevention-section">
+        <div class="section-img-left">
+            <img src="../assets/images/avoid_contacts.png" alt="avoid contacts image">
+        </div>
+        <div class="section-title">
+            <div class="title-header">
+                <span class="number">4</span>
+                <h4>Уникайте контактів</h4>
+            </div>
+            <p>Уникайте близьких контактів з людьми та мінімізуйте час, проведений
+                з людьми, які на перший погляд можуть бути хворими. Старайтесь уникати
+                скупчень людей в закритих приміщеннях та на вулиці.
+                <br>Це допоможе зменшити розповсюдження вірусної інфекції.
+            </p>
+        </div>
+    </section>
+</main>
+<script>
+    document.getElementById("vaccination-btn").onclick = function (){
+        window.open("https://diia.gov.ua/services/zapis-do-lista-ochikuvannya-vakcinaciyi-vid-covid-19","_blank");
+    }
+</script>
+</body>
+</html>
