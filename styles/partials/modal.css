@@ -1,0 +1,33 @@
+.modal-body {
+    display: flex;
+    flex-direction: column;
+}
+#modal-btn {
+    align-self: flex-end;
+    width: 150px;
+    height: 60px;
+    background-color: #FB4F4A;
+    border: 3px solid #FB4F4A;
+    border-radius: 60px;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+#modal-btn:hover {
+    background-color: white;
+    color: #FB4F4A;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+    transform: translateY(2px);
+}
+#modal-btn:active{
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.form-check {
+    margin: 20px;
+}
