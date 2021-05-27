@@ -17,6 +17,9 @@ li > a {
     position: relative;
 
 }
+a:hover {
+    text-decoration: none;
+}
 
 li > a:after {
     display: block;
