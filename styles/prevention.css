@@ -158,6 +158,10 @@ body {
     font-size: 32px;
 }
 
+.spacer {
+    padding-top: 20px;
+}
+
 @keyframes bounce {
     0% {opacity: 0.3;}
     50% {opacity: 1;}
